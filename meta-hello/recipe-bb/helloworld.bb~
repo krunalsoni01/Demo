@@ -4,7 +4,7 @@ DEPENDS = ""
 S = "${WORKDIR}"
 
 LICENSE = "GPLv2"
-LIC_FILES_CHKSUM = "file://${WORKDIR}/../../../../../../meta-hello/LICENCE.c;md5=d0ebc87b5b041dc4e8a663fe9c069a07"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/../../../../../../LICENSE;md5=d0ebc87b5b041dc4e8a663fe9c069a07"
 
 S = "${WORKDIR}"
 
