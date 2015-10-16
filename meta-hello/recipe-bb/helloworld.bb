@@ -1,0 +1,25 @@
+DESCRIPTION = "simple Hello World program"
+PR = "r0"
+DEPENDS = ""
+S = "${WORKDIR}"
+
+LICENSE = "GPLv2"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/../../../../../../LICENSE;md5=d0ebc87b5b041dc4e8a663fe9c069a07"
+
+S = "${WORKDIR}"
+
+SRC_URI = "file://${WORKDIR}/../../../../../../meta-hello/*/*/heybuddy.tar.gz"
+
+
+do_install() {
+
+	install -d -m 0755 ${D}${bindir}/
+	cp -ar */bin/* ${D}${bindir}/
+}
+
+#FILES_${PN} = "${bindir}/hello_world"
+
+
+INSANE_SKIP_${PN} = "already-stripped"
+
+PARALLEL_MAKE = ""
